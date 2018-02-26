@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU3m64rwjwXFXr7ebBRgHNQshMezIYHHbdguB5EcDLNWyoVXNcBg);
+      background-size: ;
+      color: pink;
+    }
+    a {
+      color: pink;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    img {
+      margin: 50px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,6,55,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 700px;
+      padding: 20px;
+      margin: 1 auto;
+      color: rgba(45,45,675,41);
+      
+    }
+    body {
+      text-align: center;
+      background: pink;
+      font-size: 15px;
+      font-family: zapfino;
+    }
+      
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 38px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61OcS-vT9LWcfR1hi1C5ObNoOhECGE2maTrAFgRyhiGaSVBTc">
+    <h1>Pet Adoptions</h1>
+    <ul>
+      <li><a href="https://www.paypal.com/us/home" target="_blank">Donate</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Animal_shelter" target          ="_blank">About </a></li>
+      <li><a href="http://nycacc.org/adopt/adoption-search" target="           _blank">Adopt</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Help an Animal in Need</h2>
+    <p>You can volunteer at our shelter or local animal shelters near you to help take care of the animals. Millions of dogs and cats are home less and need a family to care of them.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Give a Pet a Home</h2>
+    <p>There are many homeless animals in our shelter. They need homes ASAP! Click the link above to help give a pet a home.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Donations</h2>
+    <p>We need your help to keep these animals healthy and provide them with what they need! Donations will be used for that purpose Click the link above to donate!</p>
+    <button>Like</button>
+  </article>
+  
+  <input type="email" placeholder="Your email" id="cat">
+
+  <input type="submit" onClick="alert(cat.value)">
+  
+  <script>
+    $("button").on("click", function() {
+      alert("Got it");
+    });
+  </script>
+</body>
